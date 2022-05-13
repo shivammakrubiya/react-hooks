@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 // useState
 import ClassCounter from './components/useState/classCounter';
@@ -10,6 +11,20 @@ import UseStateObject from './components/useState/UseStateObject';
 // useEffect
 import ClassComponentOne from './components/useEffect/ClassComponentOne';
 import UseEffectRender from './components/useEffect/UseEffectRender';
+import ClassComponentMouseMove from './components/useEffect/ClassComponentMouseMove';
+import UseEffectMouse from './components/useEffect/UseEffectMouse';
+import HookMouse from './components/useEffect/HookMouse';
+import ClassIntervalCounter from './components/useEffect/ClassIntervalCounter';
+import UseEffectInterval from './components/useEffect/UseEffectInterval';
+import UseEffectFetchApi from './components/useEffect/UseEffectFetchApi';
+
+// useContex
+import ComponentC from './components/useContext/ComponentC';
+
+export const AuthorContext = React.createContext();
+export const BookContext = React.createContext();
+
+// useReducer
 
 
 function App() {
@@ -18,21 +33,48 @@ function App() {
 
       {/* useState Hook Start */}
 
-      {/* <ClassCounter />
+      {/* 
+      <ClassCounter />
       <UseStateCounter />
       <ClassCounter2 /> 
       <UseStateCounter2 />
       <UseStateObject /> 
-      <UseStateArray /> */}
+      <UseStateArray />
+       */}
 
       {/* useState Hook End */}
 
       {/* useEffect Hook Start */}
 
-      {/* <ClassComponentOne /> */}
+      {/*
+      <ClassComponentOne /> 
       <UseEffectRender />
+      <ClassComponentMouseMove />
+      <UseEffectMouse />
+      <HookMouse />
+      <ClassIntervalCounter />
+      <UseEffectInterval />
+      <UseEffectFetchApi />
+      */}
 
       {/* useEffect Hook End */}
+
+      {/* useContex Hook start */}
+
+      {/* 
+      <AuthorContext.Provider value={'Jules Vern'}>
+        <BookContext.Provider value={'Journey to the Centre of the Earth'}>
+          <ComponentC />
+        </BookContext.Provider>
+      </AuthorContext.Provider>
+       */}
+
+      {/* useContex Hook End */}
+
+      {/* useReducer Hook start */}
+
+      {/* useReducer Hook start */}
+
     </div>
   );
 }
