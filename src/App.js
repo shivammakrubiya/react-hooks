@@ -34,6 +34,20 @@ import ReducerFetching from './components/useReducer/FetchAPI/ReducerFetching';
 // useCallback
 import ParentComponent from './components/useCallback/ParentComponent';
 
+// useMemo
+import Counter from './components/useMemo/Counter';
+
+// useRef
+import InputRef from './components/useRef/InputRef';
+import ClassTimer from './components/useRef/ClassTimer';
+import HookTimer from './components/useRef/HookTimer';
+
+// Custom Hook
+import CounterOne from './components/CustomHook/useDocumentTitle/CounterOne';
+import CounterTwo from './components/CustomHook/useDocumentTitle/CounterTwo';
+import UseCounterOne from './components/CustomHook/useCounter/UseCounterOne';
+import UseCounterTwo from './components/CustomHook/useCounter/UseCounterTwo';
+
 
 export const AuthorContext = React.createContext();
 export const BookContext = React.createContext();
@@ -63,6 +77,7 @@ function App() {
     <div className="App">
 
       {/* useState Hook Start */}
+
 
       {/* 
       <ClassCounter />
@@ -123,9 +138,29 @@ function App() {
       {/* useReducer Hook End */}
 
       {/* useCallback Hook start */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
       {/* useCallback Hook End */}
 
+      {/* useMemo Hook start */}
+      {/* <Counter /> */}
+      {/* useMemo Hook End */}
+
+      {/* useref Hook start */}
+      {/* 
+      <InputRef /> 
+      <ClassTimer />
+      <HookTimer />
+      */}
+      {/* useref Hook End */}
+
+      {/* Custom Hook */}
+      {/* <CounterOne />
+      <CounterTwo /> */}
+
+      <UseCounterOne />
+      <UseCounterTwo />
+
+      {/* Custom Hook */}
     </div>
   );
 }
